@@ -30,7 +30,15 @@ router.post('/ticket', function (req, res)   {
         createdat: req.body.createdat,
         updatedat: req.body.updatedat,
         type: req.body.type,
-        subject: req.body.subject
+        subject: req.body.subject,
+        description: req.body.description,
+        priority: req.body.priority,
+        status: req.body.status,
+        recipient: req.body.recipient,
+        submitter: req.body.submitter,
+        assignee_id: req.body.assignee_id,
+        follower_id: req.body.follower_id,
+        tags: req.body.tags
     };
     //Push my object onto the end of my Array
     myArray.push(ticket);
