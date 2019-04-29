@@ -1,6 +1,6 @@
 var connectionInstance;
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://appuser:password1234@ds151927.mlab.com:51927/heroku_x998qj5q";
+var url = 'mongodb://appuser2:password1234@ds151927.mlab.com:51927/heroku_x998qj5q';
 
 
 

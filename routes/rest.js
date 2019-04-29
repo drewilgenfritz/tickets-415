@@ -93,7 +93,7 @@ router.post('/ticket', function (req, res)   {
             //Push my object onto the end of my Array
             //myArray.push(ticket);
             db(function(databaseConnection) {
-                databaseConnection.collection("tickets").insert(ticket, function(error, results) {
+                databaseConnection.collection("tickets").insertOne(ticket, function(error, results) {
                     res.send(ticket).end();
                     console.log(results);
                 });
