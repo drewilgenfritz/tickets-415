@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongodb =require('mongodb');
-var db = require('./DBConnect');
+var db = require('./DBconnect');
 
 var myArray = [];
 var ticket;
