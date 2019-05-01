@@ -70,7 +70,7 @@ router.delete('/ticket/:id', function (req,res) {
 });
 
 router.post('/ticket', function (req, res)   {
-    console.log(req.body);
+    // console.log(req.body);
     //console.log(res.body);
     //Create my object.
     ticket =   {
@@ -92,12 +92,31 @@ router.post('/ticket', function (req, res)   {
 
             //Push my object onto the end of my Array
             //myArray.push(ticket);
-            db(function(databaseConnection) {
-                databaseConnection.collection("tickets").insertOne(ticket, function(error, results) {
-                    res.send(ticket).end();
-                    console.log(results);
+    var ticketid = {id: req.body.id};
+    /*db(function (databaseConnection) {
+        databaseConnection.collection("tickets").find(ticketid).toArray(function (err,results) {
+            console.log(err);
+            //var token = results[0].id;
+            if(!results){
+                console.log(results);
+                res.send("ticket already exists");
+            }else{
+                db(function(databaseConnection) {
+                    databaseConnection.collection("tickets").insertOne(ticket, function(error, results) {
+                        res.send(ticket).end();
+                        //console.log(results);
+                    });
                 });
-            });
+
+            }
+        })*/
+    db(function(databaseConnection) {
+        databaseConnection.collection("tickets").insertOne(ticket, function(error, results) {
+            res.send(ticket).end();
+            //console.log(results);
+        });
+
+    });
             //console.log(ticket);
             //console.log(myArray);
             //Send my ticket back.
