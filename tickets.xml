@@ -1,0 +1,15 @@
+<ticket>
+    <id>35436</id>
+    <created_at>2015-07-20T22:55:29Z</created_at>
+    <updated_at>2016-05-05T10:38:52Z</updated_at>
+    <type>Network</type>
+    <subject>No Internet</subject>
+    <description>Computer won't connect to internet</description>
+    <priority>Medium</priority>
+    <status>Open</status>
+    <recipient>me</recipient>
+    <submitter>Michael_bolton@selu.edu</submitter>
+    <assignee_id>23532</assignee_id>
+    <follower_ids>2349</follower_ids>
+    <tags>network</tags>
+</ticket>
